@@ -1,0 +1,177 @@
+.header{
+    .announcement-bar{
+        background-color: $black-color;   
+        padding: 5px 0 6px;
+    }
+    .header-top{
+        display: flex;
+        .header__inner{
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            span{
+                color: $white-color; font-size: $body-font - 2; text-transform: uppercase;
+                font-family: $primary-font; font-weight: $fw-600; line-height: 20px;
+                a{
+                    color: $white-color; 
+                    &:hover{
+                        color: $link-hover-color;
+                    }
+                }
+            }
+        }
+        .social--icon{
+            .socialLinks{
+                display: flex;
+                .socialLinks-item{
+                    margin: 3px 17px 0 0;
+                    display: inline-flex;  
+                    &:last-child{
+                        margin: 3px 0 0 0;  
+                    }                  
+                    .icon{
+                            background-repeat: no-repeat;
+                            background-position: left 0;
+                            transition: opacity 0.3s ease-in-out;
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        svg{
+                            display: none;
+                        }
+                        &.icon--facebook{
+                            background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/facebook.png");
+                            // width: 9px; height: 19px;
+                        }
+                        &.icon--x{
+                            background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/twitter.png");
+                            // width: 18px; height: 24px;
+                        }
+                        &.icon--g{
+                            background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/google-.png");
+                            // width: 22px; height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-middle{
+        padding: 12px 0;
+        .head-wrap{
+            display: flex; align-items: center; justify-content: space-between;
+        } 
+        .header-lft{
+            width: 31%;
+        }   
+        .header-rgt--wrap{
+            width: 69%;
+            .header-rgt{
+                width: 100%; display: flex; align-items: center; justify-content: flex-end;
+                .rgt-header{
+                    // width: 100%; max-width: 139px;
+                    margin-left: 11px;
+                    .navUser{
+                        width: auto; padding: 0;
+                        .navUser-section--alt{
+                            display: flex ;
+                        }
+                        .navUser-item{
+                            display: inline-flex; align-items: center; position: relative;
+                            .search-div{
+                                display: none;
+                            }
+                        }
+                        .navUser-item--compare{
+                            display: none;
+                        }
+                       
+                    }
+                }
+                .middle-header-search-rgt{
+                    .form{
+                        margin-bottom: 0;
+                        .form-field{
+                            display: flex; margin-bottom: 0;
+                            border: 1px solid $light-gray;
+                            .form-input{
+                                border-radius:0; border: none; font-size: $body-font;
+                                color: $gray-color; outline: none !important; height: auto; padding: 5px 11px 5px 10px;
+                                &::placeholder{
+                                    color: $gray-color;
+                                }
+                            }
+                            .form-button{
+                                font-size: 0; margin-bottom: 0; border: none; border-radius: 0;
+                                background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/search-icon.png"); background-repeat: no-repeat; background-position: center; background-color: $black-color; 
+                                padding: 12px 21px 11px;
+                            }
+                        }
+                    }
+                }
+                .navUser-item--account{
+                    transition: all .3s ease-in-out; 
+                    // margin-left: 78px;
+                    .account_text{
+                        display: inline-block;  background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/user-icon.png"); background-repeat: no-repeat;
+                        background-position: center;  padding: 19px 20px 20px 19px;
+                        transition: all .3s ease-in-out; background-color: #c0c0c0;
+                    }
+                    .user-button{
+                        opacity: 0; visibility: hidden; position: absolute; left: -35px; top: 23px; margin: auto;
+                        transform: translate(0,30px); padding: 23px 0 0; width: 115px; z-index: 1; text-align: center;
+                        box-shadow: 0 0 6px 2px rgba(0,0,0,.15);
+                        .user-wrap{
+                            display: flex; justify-content: center; flex-direction: column; margin: 0; max-width: 115px; border-radius: 0;
+                            padding: 10px 0 10px; background-color: $white-color;  
+                            .navUser-action{
+                                text-align: center; font-weight: $fw-500; font-size: $body-font; padding: 5px; text-transform: uppercase; width: 100%;
+                        }
+                    }
+                }
+                }
+                .navUser-item--cart{
+                   
+                    margin-right: 17px;
+                    .navUser-action{
+                        display: flex; align-items: center; padding: 0;
+                        .icon_bg{
+                            background-image: url("https://cdn11.bigcommerce.com/s-v0qeliyg8g/images/stencil/original/image-manager/cart.png");
+                            background-position: center; background-color: $rhythm-color;
+                            border: 1px solid $light-gray; border-right:none; display: inline-block; padding: 19px 20px 18px 20px; background-repeat: no-repeat
+                        }
+                        .countPill{
+                            display: block; color: $gray-color; font-size: $body-font; line-height: 20px; font-weight: $fw-400;
+                            padding: 17px 17px 18px 22px; border: 1px solid $light-gray; border-left:none; background-color: transparent; border-radius: 0; margin-left: 0; display: flex;
+                            align-items: center; justify-content: center;
+                        }
+                    }
+                }
+                .navPages-container{
+                    // width: 36%;
+                    margin-right: 75px;
+                    .navPages-item { 
+                        &:nth-child(2){
+                            margin: 0 80px;
+                        }
+                        .navPages-action{
+                            color: $body-text-color; font-size: $body-font; font-weight: $fw-400;
+                            text-transform: uppercase; padding: 0 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-logo{
+        margin: 0; display: inline-block;
+        .header-logo-image-container{
+            min-height: auto;
+            .header-logo-image{
+                max-width: 188px;  max-height: 77px;
+            }
+        }
+    }
+   
+}

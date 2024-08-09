@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all fonts-family, fonts-size, and Colors, if any.
+// -----------------------------------------------------------------------------
+
+$body-font: 16px;               // Body default font-size
+$body-text-color:#000000;    // Body text color
+$body-bg-color:#ffffff;     // Body background color
+
+$link-color: #000000;       // Link text color
+$link-hover-color:#7e709c;  // Link hover color
+
+// Theme Font Family START
+$primary-font: 'Century Gothic';
+$secondary-font: 'Century Gothic bold';
+// Theme Font Family END
+
+// Theme Colors
+$primary-color: #000000;
+$secondary-color:#ffffff;
+
+// Theme Spacific Colors START
+$white-color:#ffffff;
+$black-color:#000000;
+$rhythm-color:#7e709c;
+$gray-color:#7d7d7d;
+$orange-color:#f2462e;
+// Theme Spacific Colors END
+
+// border color's
+$light-gray:#b7b7b7;
+// border color's
+
+// button background 
+$light-orange-bg:#ef4947;
+$btn-text-clr:#ffffff;
+
+// Tyogarphy Font Sizes START
+$h1: 34px;
+$h2: 30px;
+$h3: 26px;
+$h4: 22px;
+$h5: 20px;
+$h6: 18px;
+// Tyogarphy Font Sizes END
+
+// Theme Font-weight START
+$fw-400: 400;
+$fw-500: 500;   
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+// Theme Font-weight END
+
+// -----------------------------------------------------------------------------
+// How to manage CSS via class (Need to add the below class into the specific files mentioned below)
+// -----------------------------------------------------------------------------
+// 1. base.html -> Add on body tag -> page_{{snakecase page_type}} {{#if page}}page_title_{{snakecase page.title}}{{/if}}
+// 2. forgot-password.html ->  add this .form-input class above this class .forgot_row (https://prnt.sc/_-CVZQTPsDvr)
+// 3. components/blog/post post.html -> Add new div with class="blog_list" after that class="blog"
+// 4. components/cart/content content.html -> add SVG file in  class="form-increment" 
+// 5. template/pages/page.html->Removed the "page-content--centered" class and add this class "page-content--full"(https://prnt.sc/JcIkX4N347HP)
+// 6. Add this class to this file add-return.html at this place ".go_back_btn_wrapper" (https://prnt.sc/It2ELuPEaZ2C)
+// 7. To remove pagination from wishlist page, you will have to comment the pagination code and we will get that code from this file. (https://prnt.sc/Vu2lftRmt10Z)

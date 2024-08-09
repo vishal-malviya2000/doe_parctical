@@ -1,0 +1,57 @@
+.heroCarousel-content{
+    background-color: transparent; text-align: left; padding: 0;
+    max-width: 1240px;
+    width: 100%;    
+    .content_wrapper{
+        max-width: 580px; width: 100%;
+    }
+    .heroCarousel-title{
+        font-size: $body-font + 10px; line-height: 32px; color: $orange-color; text-transform: uppercase;
+        font-family: $primary-font; font-weight: $fw-400;
+        span{
+            font-weight: $fw-700;
+        }
+    }
+    .heroCarousel-description{
+        font-size: $body-font + 29px; line-height: 51px;
+        font-family: $primary-font; color: $white-color; font-weight: $fw-700;
+        text-transform: uppercase; margin-top: 22px; margin-bottom: 12px;
+    }
+    .heroCarousel-off-text{
+        font-size: 160px; font-weight: $fw-700; font-family: $primary-font;
+        line-height: 166px; color: $white-color; display: flex;
+        .off{
+            font-size: 80px; font-weight: $fw-700; color: $orange-color;
+            line-height: 86px; text-align: left;
+        }
+        .percentage-sym{
+            color: $orange-color; font-size: 70px; font-weight: $fw-700;
+            display: block;
+            line-height: 76px;
+        }
+    }
+    
+    .button{
+        background-color: $light-orange-bg; color: $btn-text-clr; text-transform: uppercase;
+        font-size: $body-font;  line-height: 22px; font-weight: $fw-400; border-radius: 0; 
+        transition: all 0.3s ease-in-out; border-color: $light-orange-bg; padding: 13px 23px 12px 26px;
+        &:hover{
+            background-color: transparent;
+            color: $light-orange-bg;
+        }
+    }
+}
+
+.heroCarousel{
+    &.slick-initialized{
+        max-height: 100%;
+    }
+}
+.heroCarousel-slide {
+    .heroCarousel-image-wrapper{
+        max-height: 534px;
+    }
+    .heroCarousel-image{
+        object-fit: cover;
+    }
+}

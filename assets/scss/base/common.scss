@@ -1,0 +1,54 @@
+* {
+    border: 0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $primary-font;
+    background: $body-bg-color;
+    font-size: $body-font;
+    font-weight: $fw-400;
+    color: $body-text-color; 
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+small{
+    font-size: $body-font - 2px;
+}
+
+a{
+    color: $link-color;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover,&:focus {   
+        color: $link-hover-color;
+    }   
+}
+.button{
+    &:hover,&:focus{
+        text-decoration: none;
+    }
+}
+
+audio,
+video,
+iframe {
+    max-width: 100%;
+}
+.container {
+    max-width: 1240px; width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
