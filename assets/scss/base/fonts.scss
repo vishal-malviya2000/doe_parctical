@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url("../fonts/CenturyGothic.eot");
+    src: url("../fonts/CenturyGothic.woff2") format('woff2'),
+         url("../fonts/CenturyGothic.woff") format('woff'),
+         url("../fonts/CenturyGothic.ttf") format('truetype'),
+         url("../fonts/CenturyGothic.svg#CenturyGothic") format('svg');
+}
+
+@font-face {
+    font-family: 'Century Gothic bold';
+    src: url("../../fonts/CenturyGothic-Bold.ttf");
+    src: url("../../fonts/CenturyGothic-Bold.eot");
+    src: url("../../fonts/CenturyGothic-Bold.svg");
+    src: url("../../fonts/CenturyGothic-Bold.woff");
+    src: url("../../fonts/CenturyGothic-Bold.woff2");
+    font-weight: $fw-700;
+}
+
+// @font-face {
+//     font-family: 'Century Gothic';
+//     src: url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.eot');
+//     src: url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+//         url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.woff2') format('woff2'),
+//         url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.woff') format('woff'),
+//         url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.ttf') format('truetype'),
+//         url('../../fonts/transfonter.org-20240730-064032/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
